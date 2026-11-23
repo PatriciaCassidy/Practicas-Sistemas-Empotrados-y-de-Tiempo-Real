@@ -32,9 +32,11 @@ El enunciado pide tres modos de funcionamiento (Arranque, Servicio y Administrac
 | Joystick X / Y | A0 / A1 | Entradas analógicas |
 | Joystick pulsador | A2 | INPUT_PULLUP, pulsado = LOW |
 | LCD | 12, 11, 10, 9, 8, 7 | RS=12, E=11, D4=10, D5=9, D6=8, D7=7 |
-| A5 | Sin conectar | Su ruido se usa como semilla de random() |
- 
-[Indica aquí el valor de las resistencias que has usado y cómo has alimentado el LCD y ajustado su contraste.]
+| A5 | Sin conectar | Su ruido se usa como semilla de random() |  
+
+Se han utilizado resistencias de 220 Ω en serie con los dos LEDs externos (LED1 y LED2) y en el pin A (Ánodo, pin 15) de la retroiluminación del LCD para limitar la corriente y evitar daños.
+
+Para la alimentación del LCD, el pin VDD (pin 2) se ha conectado directamente a 5V (sin resistencia) y el VSS (pin 1) a GND. El contraste se ha ajustado conectando el pin V0 (pin 3) directamente a GND, lo que proporciona el nivel máximo de contraste y permite leer la pantalla con total claridad.
  
 ### 2.3 Por qué estos pines
  
