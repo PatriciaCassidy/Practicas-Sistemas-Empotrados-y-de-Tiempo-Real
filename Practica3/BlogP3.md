@@ -357,7 +357,8 @@ El enunciado define tres modos con muchas pantallas y transiciones, así que se 
 - Servicio a Admin y Admin a Servicio: botón externo 5 s o más.
 - Dentro de Admin: el menú entra en cada opción con el pulsador y todas vuelven con la izquierda; en Modificar precios, el pulsador abre la edición del precio.
 
-<img width="538" height="922" alt="image" src="https://github.com/user-attachments/assets/227ef2eb-1090-4df3-a3b5-694e7dc79ee7" />
+<img width="1003" height="2027" alt="Diagrama drawio" src="https://github.com/user-attachments/assets/e56b1820-6dba-4fc6-b6c0-29936a94a3d4" />
+
 
 
  
