@@ -81,7 +81,8 @@ FOTO 5: detalle del botón externo y de los dos LEDs (LED1: verde y LED2: rojo)
  
 El esquemático se ha realizado con Fritzing.
  
-[INSERTAR ESQUEMA 1: captura del esquemático de Tinkercad. Etiqueta cada cable con su pin: 2, 3, 4, 5, 6, 13, A0, A1, A2 y 7 a 12 del LCD]
+<img width="1209" height="536" alt="imagen" src="https://github.com/user-attachments/assets/97652994-9867-4933-bc09-e84d5aa75d71" />  
+  
  
 ## 3. Funcionamiento del sistema
  
