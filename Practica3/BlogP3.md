@@ -356,7 +356,9 @@ El enunciado define tres modos con muchas pantallas y transiciones, así que se 
 - Cualquier estado de Servicio a ESPERA: cancelación de 2 a 3 s.
 - Servicio a Admin y Admin a Servicio: botón externo 5 s o más.
 - Dentro de Admin: el menú entra en cada opción con el pulsador y todas vuelven con la izquierda; en Modificar precios, el pulsador abre la edición del precio.
-[INSERTAR DIAGRAMA (opcional): diagrama de estados dibujado a mano o con una herramienta]
+
+<img width="538" height="948" alt="image" src="https://github.com/user-attachments/assets/e86b71a6-3090-41c9-a448-baed0a474211" />  
+
  
 ### 4.7 Recursos que no se han usado
  
