@@ -44,39 +44,95 @@ Para la alimentación del LCD, el pin VDD (pin 2) se ha conectado directamente a
 - **LED2 en el pin 6:** los pines PWM del UNO son 3, 5, 6, 9, 10 y 11, y los pines 5 y 6 usan el Timer0 a 980 Hz. Ese timer es el mismo que usa millis(), pero la teoría indica que es seguro usarlo para PWM junto con millis() mientras no se cambie su frecuencia de trabajo, y aquí no se cambia.
 - **INPUT_PULLUP en el botón externo y en el pulsador del joystick:** una entrada digital sin nada conectado está en estado flotante y puede leer valores inesperados. La resistencia pull-up interna del ATmega fija el nivel HIGH hasta que se pulsa (LOW) sin añadir componentes.
 - **Joystick en A0 y A1:** el ADC del UNO tiene 10 bits y devuelve valores de 0 a 1023. En reposo el joystick marca aproximadamente 512, y se consideran movimientos los valores por debajo de 300 o por encima de 700.
-- **Sin TimerOne:** al no usar esta librería no hay conflicto de timers con el PWM.
-### 2.4 Fotos del montaje
- 
-FOTO 1: vista general del montaje completo, con todos los componentes visibles  
-<img width="5709" height="3094" alt="circuitoEntero1" src="https://github.com/user-attachments/assets/008d99b2-6fe5-4d65-868c-15f028abe0d6" />  
+- **Sin TimerOne:** al no usar esta librería no hay conflicto de timers con el PWM.  
+### 2.4 Fotos del montaje  
 
-<img width="5571" height="2718" alt="circuitoEntero2" src="https://github.com/user-attachments/assets/5d29ca75-27b5-4cd0-ab94-66674d8d47a8" />  
+<table style="border-collapse: collapse; border: none; width: 100%;">
+  <!-- FOTO 1 -->
+  <tr>
+    <td colspan="2" style="border: none; padding-bottom: 10px; text-align: left;">
+      <strong>FOTO 1: vista general del montaje completo, con todos los componentes visibles</strong>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center; width: 50%;">
+      <img src="https://github.com/user-attachments/assets/84075358-adfe-43eb-b8bf-b3863c9bfe17" width="400" /> 
+    </td>
+    <td style="border: none; padding: 10px; text-align: center; width: 50%;">
+      <img src="https://github.com/user-attachments/assets/5d29ca75-27b5-4cd0-ab94-66674d8d47a8" width="400">
+    </td>
+  </tr>
 
-  
-FOTO 2: detalle del Arduino UNO y del cableado  
-<img width="4032" height="3024" alt="ArduinoUno" src="https://github.com/user-attachments/assets/cde4b468-9b8f-4d31-bbdb-c759d3c6c04f" />  
-  
-FOTO 3: detalle de la pantalla LCD y del joystick  
-<img width="3024" height="4032" alt="LCD1" src="https://github.com/user-attachments/assets/e6fc7e22-1ffe-4841-a5c1-c16f318533a2" />  
+  <!-- FOTO 2 -->
+  <tr>
+    <td colspan="2" style="border: none; padding-top: 20px; padding-bottom: 10px; text-align: left;">
+      <strong>FOTO 2: detalle del Arduino UNO y del cableado</strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/cde4b468-9b8f-4d31-bbdb-c759d3c6c04f" width="500">
+    </td>
+  </tr>
 
-<img width="4032" height="3024" alt="LCD2" src="https://github.com/user-attachments/assets/c44b19a5-f05b-4a55-b9fc-b6392bd5521b" />  
+  <!-- FOTO 3 -->
+  <tr>
+    <td colspan="2" style="border: none; padding-top: 20px; padding-bottom: 10px; text-align: left;">
+      <strong>FOTO 3: detalle de la pantalla LCD y del joystick</strong>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/e6fc7e22-1ffe-4841-a5c1-c16f318533a2" width="350">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/c44b19a5-f05b-4a55-b9fc-b6392bd5521b" width="350">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/a8896703-b564-4211-89de-bbde300c1827" width="350">
+    </td>
+  </tr>
 
-<img width="3024" height="4032" alt="Joystick" src="https://github.com/user-attachments/assets/a8896703-b564-4211-89de-bbde300c1827" />  
-  
-FOTO 4: detalle del DHT11 y del sensor de ultrasonidos HC-SR04  
- <img width="3024" height="4032" alt="DHT11_1" src="https://github.com/user-attachments/assets/0c66d12c-b2bb-4ffb-b68b-4cae1cfdd73c" />  
+  <!-- FOTO 4 -->
+  <tr>
+    <td colspan="2" style="border: none; padding-top: 20px; padding-bottom: 10px; text-align: left;">
+      <strong>FOTO 4: detalle del DHT11 y del sensor de ultrasonidos HC-SR04</strong>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/0c66d12c-b2bb-4ffb-b68b-4cae1cfdd73c" width="350">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/9ebbf543-471b-49e2-aaae-141d6e87b59b" width="350">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/c61447c6-f45f-48d3-b287-5ff3140876ae" width="350">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/fcfb6bfd-81d1-4cf5-bb8c-c47f0c8642f4" width="350">
+    </td>
+  </tr>
 
- <img width="3024" height="4032" alt="DHT11_2" src="https://github.com/user-attachments/assets/9ebbf543-471b-49e2-aaae-141d6e87b59b" />  
-
- <img width="3024" height="4032" alt="Ultrasonidos1" src="https://github.com/user-attachments/assets/c61447c6-f45f-48d3-b287-5ff3140876ae" />  
-
- <img width="3024" height="4032" alt="Ultrasonidos2" src="https://github.com/user-attachments/assets/fcfb6bfd-81d1-4cf5-bb8c-c47f0c8642f4" />  
-   
-   
-FOTO 5: detalle del botón externo y de los dos LEDs (LED1: verde y LED2: rojo)  
-<img width="3024" height="4032" alt="BotonLeds1" src="https://github.com/user-attachments/assets/406d80a6-53b2-4a9e-83a1-5d51270cbadc" />  
-
-<img width="3024" height="4032" alt="BotonLeds2" src="https://github.com/user-attachments/assets/27a762bf-8a95-461f-8b01-10b3c88b4012" />  
+  <!-- FOTO 5 -->
+  <tr>
+    <td colspan="2" style="border: none; padding-top: 20px; padding-bottom: 10px; text-align: left;">
+      <strong>FOTO 5: detalle del botón externo y de los dos LEDs (LED1: verde y LED2: rojo)</strong>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/406d80a6-53b2-4a9e-83a1-5d51270cbadc" width="400">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <img src="https://github.com/user-attachments/assets/27a762bf-8a95-461f-8b01-10b3c88b4012" width="400">
+    </td>
+  </tr>
+</table>
   
 
 ### 2.5 Esquemático del circuito
@@ -88,9 +144,46 @@ El esquemático se ha realizado con Fritzing.
  
 ## 3. Funcionamiento del sistema
  
-### 3.1 Resumen de modos y pantallas
- 
-[INSERTAR CAPTURAS DEL LCD: una por cada fila de la tabla (fotogramas de los vídeos o fotos): CARGANDO, ESPERANDO CLIENTE, temperatura y humedad, lista, Preparando, RETIRE BEBIDA y menú Admin]
+<table style="border-collapse: collapse; border: none; width: 100%;">
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center; width: 50%;">
+      <strong>Arranque</strong><br><img src="https://github.com/user-attachments/assets/019132ef-e824-466f-9561-44adaa768f02" width="400">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center; width: 50%;">
+      <strong>Esperando cliente</strong><br><img src="https://github.com/user-attachments/assets/a939df85-886a-4111-bb25-ae22e9b81170" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Menú de Administración</strong><br><img src="https://github.com/user-attachments/assets/49c56203-49a8-4a01-bd0c-8eb5dabf05fc" width="400">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Ver distancia</strong><br><img src="https://github.com/user-attachments/assets/4107bef4-2177-476c-85b4-5d740fb019e8" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Ver temperatura</strong><br><img src="https://github.com/user-attachments/assets/34429aaa-83fb-43cc-9f67-dc23cc2e0a17" width="400">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Ver contador</strong><br><img src="https://github.com/user-attachments/assets/1b5be322-9b2e-409c-bb15-c2a23d6ff90c" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Selección de producto</strong><br><img src="https://github.com/user-attachments/assets/ee72bd51-c5cf-463f-898b-f736953663ef" width="400">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Preparando bebida</strong><br><img src="https://github.com/user-attachments/assets/a39be253-7a7f-4cad-b02f-736629088648" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="border: none; padding: 10px; text-align: center;">
+      <strong>Retirar bebida</strong><br><img src="https://github.com/user-attachments/assets/b00ea6ac-34ae-40a6-85b3-41fdf6adfd72" width="400">
+    </td>
+  </tr>
+</table>
+
  
 ### 3.2 Modo Arranque
  
