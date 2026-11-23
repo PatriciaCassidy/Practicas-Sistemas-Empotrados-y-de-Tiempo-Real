@@ -318,7 +318,18 @@ Si `loop()` tarda más de 2 s en llegar a `wdt_reset()`, la placa se reinicia y 
  
 **Cómo se probó:** se provoca un bloqueo a propósito con un bucle infinito, `while (1);`, la misma construcción que usan las transparencias para ilustrar que la CPU no se libera. La línea de prueba está comentada en `loop()`: al descomentarla, pulsar el joystick cuelga el programa y, a los 2 s aproximadamente, el watchdog reinicia la placa y vuelve a aparecer `CARGANDO ...`. Hay que pulsar y soltar enseguida: si el botón se mantiene pulsado mientras la placa arranca, el bloqueo vuelve a producirse tras cada reinicio.
  
-[INSERTAR VÍDEO V4: prueba del watchdog (congelado, reinicio y vuelta a CARGANDO ...)]
+VÍDEO: prueba del watchdog (congelado, reinicio y vuelta a CARGANDO  
+
+
+
+
+
+https://github.com/user-attachments/assets/b66d2165-c948-4b02-8c78-8ac633579aaa
+
+
+
+
+
  
 ### 4.5 PWM, sensores, joystick y pantalla
  
