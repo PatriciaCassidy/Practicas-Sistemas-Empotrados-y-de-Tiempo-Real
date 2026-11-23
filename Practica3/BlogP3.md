@@ -56,7 +56,7 @@ Para la alimentación del LCD, el pin VDD (pin 2) se ha conectado directamente a
   </tr>
   <tr>
     <td style="border: none; padding: 10px; text-align: center; width: 50%;">
-      <img src="https://github.com/user-attachments/assets/84075358-adfe-43eb-b8bf-b3863c9bfe17" width="400" /> 
+      <img src="https://github.com/user-attachments/assets/84075358-adfe-43eb-b8bf-b3863c9bfe17" width="400"> 
     </td>
     <td style="border: none; padding: 10px; text-align: center; width: 50%;">
       <img src="https://github.com/user-attachments/assets/5d29ca75-27b5-4cd0-ab94-66674d8d47a8" width="400">
@@ -82,16 +82,10 @@ Para la alimentación del LCD, el pin VDD (pin 2) se ha conectado directamente a
     </td>
   </tr>
   <tr>
-    <td style="border: none; padding: 10px; text-align: center;">
-      <img src="https://github.com/user-attachments/assets/e6fc7e22-1ffe-4841-a5c1-c16f318533a2" width="350">
-    </td>
-    <td style="border: none; padding: 10px; text-align: center;">
-      <img src="https://github.com/user-attachments/assets/c44b19a5-f05b-4a55-b9fc-b6392bd5521b" width="350">
-    </td>
-  </tr>
-  <tr>
     <td colspan="2" style="border: none; padding: 10px; text-align: center;">
-      <img src="https://github.com/user-attachments/assets/a8896703-b564-4211-89de-bbde300c1827" width="350">
+      <img src="https://github.com/user-attachments/assets/e6fc7e22-1ffe-4841-a5c1-c16f318533a2" style="width: 33%; height: auto;">
+      <img src="https://github.com/user-attachments/assets/c44b19a5-f05b-4a55-b9fc-b6392bd5521b" style="width: 33%; height: auto;">
+      <img src="https://github.com/user-attachments/assets/a8896703-b564-4211-89de-bbde300c1827" style="width: 30%; height: auto;">
     </td>
   </tr>
 
@@ -143,43 +137,45 @@ El esquemático se ha realizado con Fritzing.
   
  
 ## 3. Funcionamiento del sistema
- 
 <table style="border-collapse: collapse; border: none; width: 100%;">
   <tr>
     <td style="border: none; padding: 10px; text-align: center; width: 50%;">
-      <strong>Arranque</strong><br><img src="https://github.com/user-attachments/assets/019132ef-e824-466f-9561-44adaa768f02" width="400">
+      <strong>Arranque</strong><br><img src="https://github.com/user-attachments/assets/019132ef-e824-466f-9561-44adaa768f02" width="350">
     </td>
     <td style="border: none; padding: 10px; text-align: center; width: 50%;">
-      <strong>Esperando cliente</strong><br><img src="https://github.com/user-attachments/assets/a939df85-886a-4111-bb25-ae22e9b81170" width="400">
+      <strong>Esperando cliente</strong><br><img src="https://github.com/user-attachments/assets/a939df85-886a-4111-bb25-ae22e9b81170" width="350">
     </td>
   </tr>
   <tr>
     <td style="border: none; padding: 10px; text-align: center;">
-      <strong>Menú de Administración</strong><br><img src="https://github.com/user-attachments/assets/49c56203-49a8-4a01-bd0c-8eb5dabf05fc" width="400">
+      <strong>Menú de Administración</strong><br><img src="https://github.com/user-attachments/assets/49c56203-49a8-4a01-bd0c-8eb5dabf05fc" width="350">
     </td>
     <td style="border: none; padding: 10px; text-align: center;">
-      <strong>Ver distancia</strong><br><img src="https://github.com/user-attachments/assets/4107bef4-2177-476c-85b4-5d740fb019e8" width="400">
+      <strong>Ver distancia</strong><br><img src="https://github.com/user-attachments/assets/4107bef4-2177-476c-85b4-5d740fb019e8" width="350">
     </td>
   </tr>
   <tr>
     <td style="border: none; padding: 10px; text-align: center;">
-      <strong>Ver temperatura</strong><br><img src="https://github.com/user-attachments/assets/34429aaa-83fb-43cc-9f67-dc23cc2e0a17" width="400">
+      <strong>Ver temperatura</strong><br><img src="https://github.com/user-attachments/assets/34429aaa-83fb-43cc-9f67-dc23cc2e0a17" width="350">
     </td>
     <td style="border: none; padding: 10px; text-align: center;">
-      <strong>Ver contador</strong><br><img src="https://github.com/user-attachments/assets/1b5be322-9b2e-409c-bb15-c2a23d6ff90c" width="400">
+      <strong>Ver contador</strong><br><img src="https://github.com/user-attachments/assets/1b5be322-9b2e-409c-bb15-c2a23d6ff90c" width="350">
     </td>
   </tr>
   <tr>
     <td style="border: none; padding: 10px; text-align: center;">
-      <strong>Selección de producto</strong><br><img src="https://github.com/user-attachments/assets/ee72bd51-c5cf-463f-898b-f736953663ef" width="400">
+      <strong>Selección de producto</strong><br><img src="https://github.com/user-attachments/assets/ee72bd51-c5cf-463f-898b-f736953663ef" width="350">
     </td>
     <td style="border: none; padding: 10px; text-align: center;">
-      <strong>Preparando bebida</strong><br><img src="https://github.com/user-attachments/assets/a39be253-7a7f-4cad-b02f-736629088648" width="400">
+      <strong>Preparando bebida</strong><br><img src="https://github.com/user-attachments/assets/a39be253-7a7f-4cad-b02f-736629088648" width="350">
     </td>
   </tr>
   <tr>
-    <td colspan="2" style="border: none; padding: 10px; text-align: center;">
-      <strong>Retirar bebida</strong><br><img src="https://github.com/user-attachments/assets/b00ea6ac-34ae-40a6-85b3-41fdf6adfd72" width="400">
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Retirar bebida</strong><br><img src="https://github.com/user-attachments/assets/b00ea6ac-34ae-40a6-85b3-41fdf6adfd72" width="350">
+    </td>
+    <td style="border: none; padding: 10px; text-align: center;">
+      <strong>Modificación de precio</strong><br><img src="https://github.com/user-attachments/assets/a892b405-5c16-4084-83d0-0b763077c422" width="350">
     </td>
   </tr>
 </table>
