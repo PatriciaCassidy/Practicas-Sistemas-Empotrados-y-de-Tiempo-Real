@@ -371,7 +371,10 @@ Todas las pruebas se han grabado en vídeo con el montaje real. La tabla resume 
  
 
 
-https://github.com/user-attachments/assets/4ee8523c-bb47-41de-a4ab-021ca4855fc9
+
+https://github.com/user-attachments/assets/aa3d658c-de67-4d38-a6b4-d7de1bfd54e6
+
+
 
 
  
