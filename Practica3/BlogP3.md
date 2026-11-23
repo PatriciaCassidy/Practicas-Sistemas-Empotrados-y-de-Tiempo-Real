@@ -369,9 +369,11 @@ El enunciado define tres modos con muchas pantallas y transiciones, así que se 
  
 Todas las pruebas se han grabado en vídeo con el montaje real. La tabla resume qué se probó, qué se observó y en qué vídeo se ve.
  
-[INSERTAR VÍDEO V1: arranque, servicio completo (presencia, lista, preparación con LED2, cancelación) y opciones de Admin. Pon el enlace o el vídeo incrustado]
- 
-[INSERTAR VÍDEO V2: entrada en Admin con LED1 y LED2 encendidos y salida con 5 s]
+
+
+https://github.com/user-attachments/assets/4ee8523c-bb47-41de-a4ab-021ca4855fc9
+
+
  
 | Prueba | Qué se hizo | Resultado observado | Vídeo |
 |---|---|---|---|
@@ -386,13 +388,9 @@ Todas las pruebas se han grabado en vídeo con el montaje real. La tabla resume 
 | Salir de Admin | Mantener el botón externo 5 s o más | Los LEDs se apagan y se vuelve al Servicio | V2 |
 | Watchdog | Colgar el programa a propósito | Pantalla congelada y reinicio a los 2 s aproximadamente, con CARGANDO ... | V4 |
  
-[INSERTAR VÍDEO V3 (opcional): varias preparaciones seguidas, para mostrar que cada una dura un tiempo distinto]
- 
-[INSERTAR CAPTURAS DEL LCD de Admin: Ver temperatura, Distancia, Contador, lista de precios y edición de un precio]
- 
 ## 6. Problemas encontrados y soluciones
  
-**6.1 LED2 no se encendía.** En las primeras pruebas LED1 funcionaba, pero LED2 no se encendía nunca: ni en el Arranque, ni en Admin ni durante la preparación. En Admin el código escribe HIGH directamente en el pin 6, así que el fallo no podía estar en el PWM sino en la conexión del LED. Se revisaron el pin al que iba el cable, la polaridad del LED (ánodo hacia el pin y cátodo hacia GND) y la conexión a tierra. [Explica aquí qué estaba mal y cómo lo corregiste.]
+**6.1 LED2 no se encendía.** En las primeras pruebas LED1 funcionaba, pero LED2 no se encendía nunca: ni en el Arranque, ni en Admin ni durante la preparación. En Admin el código escribe HIGH directamente en el pin 6, así que el fallo no podía estar en el PWM sino en la conexión del LED. Se revisaron el pin al que iba el cable, la polaridad del LED (ánodo hacia el pin y cátodo hacia GND) y la conexión a tierra. Finalmente, el problema estaba en el posicionamiento de las patas del LED que al cambiar empezó a funcionar bien.
  
 **6.2 El brillo de LED2 parecía no ser progresivo.** Con LED2 ya funcionando se revisó el vídeo fotograma a fotograma: el brillo sube de forma progresiva durante unos 3 s hasta quedar en su máximo, y se mantiene así hasta que termina la preparación (unos 5 s en esa prueba). El código aplica un ciclo de trabajo lineal de 0 a 255, es decir, de 0 % a 100 %, y no se modificó. Con preparaciones más largas (hasta 8 s) la subida se aprecia mejor.
  
